@@ -30,23 +30,4 @@ https://mvnrepository.com/
 
 ---
 
-### 🛠 How to Use
-
-1. Visit the Maven Repository:  
-   https://mvnrepository.com/
-
-2. Search for the required dependency.
-
-3. Copy the **Maven `<dependency>`** snippet.
-
-4. Paste it into the `pom.xml` file under the `<dependencies>` section.
-
-5. Reload / update the Maven project.
-
----
-
-### ⚠️ Important Note
-
-- Ensure the dependency version is **compatible with the current Spring Boot version** used in this project.
-- Prefer **Spring Boot Starter** dependencies when available.
 
