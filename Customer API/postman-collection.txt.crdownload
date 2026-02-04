@@ -1,0 +1,84 @@
+{
+  "info": {
+    "name": "Contact Management API - Security Lab",
+    "_postman_id": "d1a8a22f-65cd-4e64-80a4-4a52acb7f778",
+    "description": "Postman collection to test the secured Contact Management API with Spring Security",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Public Endpoint - Info",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/contacts/public/info",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["contacts", "public", "info"]
+        }
+      }
+    },
+    {
+      "name": "Get All Contacts (User/Admin)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic dXNlcjp1c2VyMTIz",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/contacts",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["contacts"]
+        }
+      }
+    },
+    {
+      "name": "Add Contact (Admin Only)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic YWRtaW46YWRtaW4xMjM=",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/contacts",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["contacts"]
+        }
+      }
+    },
+    {
+      "name": "Delete Contact (Admin Only)",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic YWRtaW46YWRtaW4xMjM=",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/contacts/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["contacts", "1"]
+        }
+      }
+    }
+  ]
+}
