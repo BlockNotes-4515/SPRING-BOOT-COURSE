@@ -207,7 +207,7 @@ public class ProductServiceImpl implements ProductService {
         // DELETE
         List<Cart> carts = cartRepository.findCartsByProductId(productId);
         carts.forEach(cart -> cartService.deleteProductFromCart(cart.getCartId(), productId));
-        
+
         productRepository.delete(product);
         return modelMapper.map(product, ProductDTO.class);
     }
