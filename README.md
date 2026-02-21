@@ -1,135 +1,166 @@
 <div align="center">
-<h1>SPRING-BOOT-COURSE</h1>
+  <h1>SPRING-BOOT-COURSE</h1>
 </div>
 
 <p align="center">
-SPRING-BOOT-COURSE  
-<br>
-<strong>Building Product Add Functionality For Seller ASE/AASE/SWE/TL/PL</strong>
+  SPRING-BOOT-COURSE<br>
+  <strong>Building Product Add Functionality For Seller ASE/AASE/SWE/TL/PL</strong>
 </p>
 
 <div align="center">
-  <img width="140" src="https://user-images.githubusercontent.com/6661165/91657958-61b4fd00-eb00-11ea-9def-dc7ef5367e34.png"  alt="GitHub Profile Trophy"/>
-  <h2 align="center">JAVA FULLSTACK DEVELOPMENT PROJETS</h2>
-  <p align="center">🏆 SPRINGBOOTS COURSE DEV-SWE</p>
+  <img width="140" 
+       src="https://user-images.githubusercontent.com/6661165/91657958-61b4fd00-eb00-11ea-9def-dc7ef5367e34.png"  
+       alt="Project Logo"/>
+  <h2>JAVA FULLSTACK DEVELOPMENT PROJECTS</h2>
+  <p>🏆 SPRINGBOOT COURSE DEV-SWE</p>
 </div>
+
 <div align="center">
 
-
 [![license](https://img.shields.io/github/license/ryo-ma/github-profile-trophy)](https://github.com/ryo-ma/github-profile-trophy/blob/master/LICENSE)
-[![share](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fryo-ma%2Fgithub-profile-trophy)](https://twitter.com/intent/tweet?text=Add%20dynamically%20generated%20GitHub%20Trophy%20on%20your%20readme%0D%0A&url=https%3A%2F%2Fgithub.com%2Fryo-ma%2Fgithub-profile-trophy)
+[![share](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fryo-ma%2Fgithub-profile-trophy)](https://twitter.com/intent/tweet)
+
+</div>
+
+---
+
+# 📌 Project Overview
+
+This project is built using **Spring Boot 3.2.5** as part of Java Full Stack Development training.  
+It demonstrates backend development concepts including REST APIs, authentication, security configuration, and Swagger API documentation.
+
+---
 
 ## 📦 Dependency Management
 
 All project dependencies are managed using **Maven**.
 
-If you need to add or update any dependency (for example, while converting a normal Java project to a **Spring Boot** project), please use the official **Maven Repository**.
+If you need to add or update any dependency (for example, while converting a normal Java project to a Spring Boot project), please use the official Maven Repository:
 
-🔗 **Maven Repository**  
-https://mvnrepository.com/
+🔗 https://mvnrepository.com/
 
 ---
 
-<h2>📘 API Documentation – Swagger UI</h2>
+# 📘 API Documentation – Swagger UI
 
-<p>
-This project integrates <strong>OpenAPI 3</strong> documentation using 
-<strong>Springdoc</strong> to provide interactive API exploration and testing capabilities.
-</p>
+This project integrates **OpenAPI 3** documentation using Springdoc for interactive API exploration and testing.
 
-<hr>
+---
 
-<h3>🔎 Accessing Swagger UI</h3>
+## 🔎 Accessing Swagger UI
 
-<p>
-After successfully running the application, the Swagger UI can be accessed at:
-</p>
+After successfully running the application, access Swagger UI at:
 
-<pre>
+```
 http://localhost:8080/swagger-ui/index.html#/
-</pre>
+```
 
-<p>
-If the application runs on a different port (e.g., 5000), update the URL accordingly:
-</p>
+If running on a different port:
 
-<pre>
+```
 http://localhost:{PORT}/swagger-ui/index.html#/
-</pre>
+```
 
-<hr>
+---
 
-<h3>📄 OpenAPI JSON Specification</h3>
+## 📄 OpenAPI JSON Specification
 
-<p>
-The raw OpenAPI JSON documentation is available at:
-</p>
+Raw API documentation:
 
-<pre>
+```
 http://localhost:8080/v3/api-docs
-</pre>
+```
 
-<hr>
+---
 
-<h3>⚙️ Prerequisites</h3>
+## ⚙️ Prerequisites
 
-<ul>
-  <li>Java 17 or higher</li>
-  <li>Maven installed</li>
-  <li>Spring Boot Version: <strong>3.2.5</strong></li>
-</ul>
+- Java 17 or higher  
+- Maven installed  
+- Spring Boot Version: 3.2.5  
 
-<p><strong>Swagger Dependency Used:</strong></p>
+---
 
-<pre>
-&lt;dependency&gt;
-    &lt;groupId&gt;org.springdoc&lt;/groupId&gt;
-    &lt;artifactId&gt;springdoc-openapi-starter-webmvc-ui&lt;/artifactId&gt;
-    &lt;version&gt;2.5.0&lt;/version&gt;
-&lt;/dependency&gt;
-</pre>
+## 🧩 Swagger Dependency Used
 
-<hr>
+```xml
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.5.0</version>
+</dependency>
+```
 
-<h3>🚀 Running the Application</h3>
+---
 
-<p>Run using Maven:</p>
+## 🚀 Running the Application
 
-<pre>
+Using Maven:
+
+```bash
 mvn clean install
 mvn spring-boot:run
-</pre>
+```
 
-<p>Or execute the generated JAR file:</p>
+Or using the generated JAR file:
 
-<pre>
+```bash
 java -jar target/your-jar-file-name.jar
-</pre>
+```
 
-<hr>
+---
 
-<h3>🔐 Security Configuration Note</h3>
+## 🔐 Security Configuration
 
-<p>
 The following endpoints are publicly accessible:
-</p>
 
-<ul>
-  <li><code>/v3/api-docs/**</code></li>
-  <li><code>/swagger-ui/**</code></li>
-</ul>
+- `/v3/api-docs/**`
+- `/swagger-ui/**`
 
-<p>
-All other endpoints require authentication unless explicitly permitted in the security configuration.
-</p>
+All other APIs require authentication unless explicitly permitted in the security configuration.
 
-<hr>
+---
 
-<h3>🛠 Troubleshooting</h3>
+## 🛠 Troubleshooting
 
-<ul>
-  <li>Ensure the application is running successfully</li>
-  <li>Verify the correct port number</li>
-  <li>Confirm the Springdoc dependency is included</li>
-  <li>Ensure no deprecated <strong>Springfox</strong> dependency is present</li>
-</ul>
+If Swagger UI does not open:
+
+- Ensure the application is running successfully
+- Verify the correct port number
+- Confirm the Springdoc dependency is included
+- Remove any deprecated Springfox dependency
+- Run `mvn clean install` before starting
+
+---
+
+# 🏗 Tech Stack
+
+- Java 17  
+- Spring Boot 3.2.5  
+- Spring Security  
+- Maven  
+- OpenAPI (Springdoc)  
+- H2 / MySQL (based on configuration)
+
+---
+
+# 📂 Project Structure (Sample)
+
+```
+src/
+ ├── main/
+ │    ├── java/
+ │    │    └── com.ecommerce.project
+ │    ├── resources/
+ │    │    ├── application.properties
+ │    │    └── static/
+ │    └── test/
+```
+
+---
+
+# 👨‍💻 Author
+
+Developed as part of Java Full Stack Development learning and backend engineering practice.
+
+---
