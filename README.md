@@ -164,3 +164,6 @@ src/
 Developed as part of Java Full Stack Development learning and backend engineering practice.
 
 ---
+<div style="text-align: center;">
+  <img src="https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d9-4eeccf656e44.gif" alt="centered GIF">
+</div>
